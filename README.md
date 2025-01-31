@@ -1,59 +1,20 @@
-Email Sender App
-Overview
-A full-stack app built with React (frontend) and Django (backend) to send emails via SMTP services like Gmail.
+# Email Sender App
 
-Features
-React Frontend: Intuitive UI for composing emails.
+## Overview
 
-Django Backend: Handles email sending via SMTP.
+This is a full-stack **Email Sender App** built with **React** for the frontend and **Django** for the backend. The app allows users to send emails using SMTP services like Gmail, featuring an intuitive user interface and seamless email sending.
 
-SMTP Integration: Supports Gmail and other SMTP servers.
+## Features
+- **Frontend (React)**: User-friendly interface for composing and sending emails.
+- **Backend (Django)**: Handles email sending via SMTP.
+- **SMTP Integration**: Supports Gmail or any other SMTP server.
 
-Secure: Protects sensitive credentials.
+## Installation
 
-Installation
-bash
-Copy
-# Clone the repo  
-git clone https://github.com/uzairch600/Email-Sender-App.git  
-cd Email-Sender-App  
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/uzairch600/Email-Sender-App.git
 
-# Backend setup  
-cd backend  
-pip install -r requirements.txt  
-python manage.py migrate  
 
-# Configure SMTP in settings.py:  
-# EMAIL_HOST = 'smtp.gmail.com'  
-# EMAIL_PORT = 587  
-# EMAIL_USE_TLS = True  
-# EMAIL_HOST_USER = 'your-email@gmail.com'  
-# EMAIL_HOST_PASSWORD = 'your-app-password'  
-
-# Frontend setup  
-cd ../frontend  
-npm install  
-
-# Run servers  
-cd ../backend  
-python manage.py runserver  
-cd ../frontend  
-npm start  
-Configuration
-Update settings.py with your SMTP credentials.
-
-For Gmail, enable "Less secure apps" or use an App Password.
-
-Security Tips
-Never hardcode credentials. Use environment variables.
-
-Rotate credentials if exposed.
-
-Troubleshooting
-CORS Issues: Configure django-cors-headers.
-
-SMTP Errors: Verify credentials and server settings.
-
-Contributions
-Contributions are welcome! Fork the repo, create a branch, and submit a PR.
-
+  ##Note
+  EMAIL_HOST_PASSWORD = 'your-app-password'  # Don't expose this!
